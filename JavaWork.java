@@ -6,7 +6,7 @@ public class JavaWork
 	public static void main(String[] args) 
 	{
 		String string1; 
-		String temp;		//宣告
+		String temp;							//宣告
 		ArrayList<String> array = new ArrayList<String>();
 		
 		System.out.println("請輸入一串字(分段請以,隔開)："); 
@@ -16,11 +16,8 @@ public class JavaWork
 		
 		String string2 = string1.toLowerCase(); 			//轉小寫
 		System.out.println(string2);					//輸出
-	
-		
+
 		String[] string3 = string2.split(",| |\\."); 			//分割字串
-		
-			
 			
 		for(int i=0;i<string3.length;i++)				//排序，依字串大小由小到大排列
 		{
@@ -35,11 +32,9 @@ public class JavaWork
 			}
 		}
 			
-			
-			
 		for(int i=0;i<string3.length;i++)
 		{
-				array.add(string3[i]); 				//將string3[i]的內容依序加入array裡存放
+			array.add(string3[i]); 					//將string3[i]的內容依序加入array裡存放
 		}
 		
 		for(int i=0;i<array.size();i++)					//刪除重複
@@ -53,10 +48,9 @@ public class JavaWork
 			}
 		}
 		
-
 		for(int i=0;i<array.size();i++)
 		{
-			System.out.println(array.get(i)); 				//印出結果
+			System.out.println(array.get(i)); 			//印出結果
 		}
 	}
 }
