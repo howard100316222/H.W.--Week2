@@ -12,17 +12,17 @@ public class JavaWork
 		System.out.println("請輸入一串字(分段請以,隔開)："); 
 		Scanner scanner = new Scanner(System.in); 			//輸入
 		
-		string1 = scanner.nextLine(); 						//接收輸入給並印出
+		string1 = scanner.nextLine(); 					//接收輸入並印出
 		
 		String string2 = string1.toLowerCase(); 			//轉小寫
-		System.out.println(string2);						//輸出
+		System.out.println(string2);					//輸出
 	
 		
-		String[] string3 = string2.split(",| |\\."); 		//分割字串
+		String[] string3 = string2.split(",| |\\."); 			//分割字串
 		
 			
 			
-		for(int i=0;i<string3.length;i++)
+		for(int i=0;i<string3.length;i++)				//排序，依字串大小由小到大排列
 		{
 			for(int j=0;j<string3.length;j++)
 			{
@@ -39,10 +39,10 @@ public class JavaWork
 			
 		for(int i=0;i<string3.length;i++)
 		{
-				array.add(string3[i]); 						//將string3[i]的內容依序加入array裡存放
+				array.add(string3[i]); 				//將string3[i]的內容依序加入array裡存放
 		}
 		
-		for(int i=0;i<array.size();i++)						//刪除重複
+		for(int i=0;i<array.size();i++)					//刪除重複
 		{
 			for(int j=0;j<array.size();j++)
 			{
